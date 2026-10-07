@@ -44,13 +44,17 @@ Source parameters: U0 = 10, t1 = 1 s, t2 = 2 s, t3 = 4 s. The analytical solutio
 - `part3_arbitrary_voltage.m`
 - `docs/report_sr.pdf`: full report (in Serbian)
 
-## How to run
+## Simulink / Simscape models
 
-Open a script in MATLAB and run it. It plots the analytical solution (red, dashed) against the numerical one (blue).
+The `pod_a/b/c` in the file names stands for subtask a/b/c of the project (Serbian "podzadatak"), one per source type:
 
-- Parts 1 and 2 need the Symbolic Math Toolbox (`syms`, `matlabFunction`).
-- Part 3 uses 10 million time points. Reduce `tspan` for a faster run.
-- The Simulink and Simscape models are shown in the report. Add the `.slx` files to the repo if you want others to run them.
+| Subtask | Source | Simulink | Simscape |
+| ------- | ------ | -------- | -------- |
+| a | Constant current (I0 = 200 A) | `Projekat_pod_a_simulink.slx` | `Projekat_pod_a_simscape.slx` |
+| b | Sinusoidal voltage (35 kV RMS, 50 Hz) | `Projekat_pod_b_simulink.slx` | `Projekat_pod_b_simscape.slx` |
+| c | Piecewise-linear voltage | `Projekat_pod_c_simulink.slx` | `Projekat_pod_c_simscape.slx` |
+
+Saved in MATLAB R20XX.
 
 ## Tools
 
